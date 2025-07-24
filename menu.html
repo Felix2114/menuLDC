@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Dos Carnales - Menú</title>
+  <!-- <link href="../dist/styles.css" rel="stylesheet"> 
+  <script src="https://cdn.tailwindcss.com"></script> -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+
+</head>
+<body class="bg-white text-dark font-sans">
+
+  <!-- Header tipo Starbucks -->
+  <header class="fixed-top bg-white border-bottom border-secondary zindex-sticky">
+    <div class="container d-flex justify-content-between align-items-center py-3 px-3" style="max-width: 1140px;">
+      <div class="d-flex align-items-center gap-3">
+        <img src="LosDosCar.jpeg" alt="Logo" class="rounded-circle" style="height:40px; width:40px; object-fit: cover;">
+        <span class="fw-bold fs-5 text-dark">Los Dos Carnales</span>
+      </div>
+      <nav class="d-flex gap-4 small text-secondary">
+        <a href="#menu" class="nav-link p-0 text-secondary link-hover-danger">Menú</a>
+        <a href="#ubicacion" class="nav-link p-0 text-secondary link-hover-danger">Ubicación</a>
+        <a href="#contacto" class="nav-link p-0 text-secondary link-hover-danger">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero tipo Starbucks -->
+  <section class="d-flex flex-column flex-md-row mt-5 pt-5">
+    <div class="w-100 w-md-50">
+      <img src="ldc.jpeg" alt="Los Dos Carnales" class="img-fluid w-100 h-100" style="object-fit: cover;">
+    </div>
+    <div class="w-100 w-md-50 bg-danger text-white d-flex flex-column justify-content-center p-4 p-md-5">
+      <h2 class="display-4 fw-bold mb-3">¡Bienvenidos!</h2>
+      <p class="fs-5 mb-3">Los Dos Carnales Restaurante Familiar</p>
+      <p>Visítanos en Córdoba, Veracruz. Siempre con la mejor atención y el buen sazón de las tías.</p>
+    </div>
+  </section>
+
+  <!-- Menú -->
+  <section id="menu" class="py-5 px-3 bg-light">
+    <div class="container" style="max-width: 1140px;">
+      <h2 class="text-center fw-bold text-dark mb-5">Nuestro Menú</h2>
+
+      <!-- Botones categorías -->
+      <div class="d-flex justify-content-center gap-3 my-4 flex-wrap">
+        <button onclick="mostrarCategoria('comidas')" class="btn btn-danger rounded">Comidas</button>
+        <button onclick="mostrarCategoria('antojitos')" class="btn btn-danger rounded">Antojitos</button>
+        <button onclick="mostrarCategoria('snacks')" class="btn btn-danger rounded">Snacks</button>
+        <button onclick="mostrarCategoria('bebidas')" class="btn btn-danger rounded">Bebidas</button>
+      </div>
+
+      <div id="comidas" class="categoria-menu">
+        <div class="mb-5">
+          <h3 class="fs-4 fw-semibold text-dark mb-4">Comidas</h3>
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3">
+
+            <div class="col">
+              <div class="card shadow-sm rounded">
+                <img src="imagenes/comida/arroz.jpeg" alt="ARROZ LITRO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+                <div class="card-body p-3">
+                  <h5 class="card-title fw-bold mb-1">Arroz Litro</h5>
+                  <p class="card-text text-muted small mb-1">Producto casero.</p>
+                  <span class="fw-bold text-danger">$40 MXN</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm rounded">
+                <img src="imagenes/comida/Tampiquena.jpg" alt="TAMPIQUEÑAS" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+                <div class="card-body p-3">
+                  <h5 class="card-title fw-bold mb-1">Tampiqueñas</h5>
+                  <p class="card-text text-muted small mb-1">Producto casero.</p>
+                  <span class="fw-bold text-danger">$130 MXN</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm rounded">
+                <img src="imagenes/comida/mojarra.jpeg" alt="MOJARRAS PROMO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+                <div class="card-body p-3">
+                  <h5 class="card-title fw-bold mb-1">Mojarras Promo</h5>
+                  <p class="card-text text-muted small mb-1">Producto casero.</p>
+                  <span class="fw-bold text-danger">$180 MXN</span>
+                </div>
+              </div>
+            </div>
+
+          <div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/milanesa.jpg" alt="MILANESA DE POLLO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Milanesa De Pollo</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$60 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/mixiote.jpg" alt="MIXIOTES DE POLLO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Mixiotes De Pollo</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$80 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/pozole.jpg" alt="MEDIO POZOLE" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Medio Pozole</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$60 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/norteña.jpeg" alt="NORTEÑA" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Norteña</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$120 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/sopa.jpg" alt="SOPA DE FIDEO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Sopa de Fideo</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$40 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/tesmole.jpg" alt="TESMOLE" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Tesmole</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$60 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/caldodecamaron.jpg" alt="CALDO DE CAMARON" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Caldo De Camaron</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$120 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/salsapuerco.jpg" alt="SALSA DE PUERCO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Salsa De Puerco</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$120 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/pozole.jpg" alt="POZOLE" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Pozole</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$100 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/chilaquiles.jpg" alt="CHILAQUILES" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Chilaquiles</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$60 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/mixiotepuerco.jpg" alt="MIXIOTES DE PUERCO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Mixiotes De Puerco</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$120 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/adobo.jpg" alt="MEDIO ADOBO DE PUERCO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Medio Adobo De Puerco</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$50 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/arroz.jpeg" alt="ARROZ MEDIO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Arroz Medio</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$25 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/adobo.jpg" alt="ADOBO PUERCO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Adobo Puerco</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$100 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/mojarra.jpeg" alt="MOJARRAS" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Mojarras</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$120 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/chilerelleno.jpg" alt="CHILE RELLENO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Chile Relleno</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$30 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/mole.jpg" alt="MOLE" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Mole</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$80 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/chilerelleno.jpg" alt="ORDEN CHILE RELLENO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Orden Chile Relleno</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$60 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/menudencia.jpg" alt="CALDO DE MENUDENCIA" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Caldo De Menudencia</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$40 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/mondongo.jpg" alt="MONDONGO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Mondongo</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$120 MXN</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card shadow-sm rounded">
+    <img src="imagenes/comida/mondongo.jpg" alt="MEDIO MONDONGO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+    <div class="card-body p-3">
+      <h5 class="card-title fw-bold mb-1">Medio Mondongo</h5>
+      <p class="card-text text-muted small mb-1">Producto casero.</p>
+      <span class="fw-bold text-danger">$60 MXN</span>
+    </div>
+  </div>
+</div>
+
+        </div>
+</div>
+
+</div>
+
+    <!-- ANTOJITOS -->
+   
+  <div id="antojitos" class="categoria-menu d-none">
+  <div class="mb-5">
+    <h3 class="h5 fw-semibold text-dark mb-4">Antojitos</h3>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3">
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/empanadas.jpg" alt="EMPANADA QUESO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Empanada Queso</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$12 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/garnachaRoja.jpg" alt="GARNACHA ROJA" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Garnacha Roja</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$12 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/empanadaChoriqueso.jpg" alt="EMPANADA CHORIQUESO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Empanada Choriqueso</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$15 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/tacosdorados.jpg" alt="TACO DORADO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Taco Dorado</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$12 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/empanadaChampinon.jpg" alt="EMPANADA DE CHAMPIÑON" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Empanada De Champiñon</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$12 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/garnachaVerde.jpg" alt="GARNACHA VERDE" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Garnacha Verde</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$12 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/empanadas.jpg" alt="EMPANADA DE PAPA" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Empanada De Papa</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$12 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/tostada.jpg" alt="TOSTADA SENCILLA" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Tostada Sencilla</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$12 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/tacosdorados.jpg" alt="ORD. TACOS DORADOS" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Ord. Tacos Dorados</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$20 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/gordita.jpg" alt="GORDITA DE FRIJOL" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Gordita De Frijol</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$12 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/empanadaQueso.jpg" alt="EMPANADA QUESO CON CHAMPIÑON" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Empanada Queso Con Champiñon</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$15 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/tostadaPollo.jpg" alt="TOSTADA POLLO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Tostada Pollo</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$15 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/empanadas.jpg" alt="EMPANADA DE POLLO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Empanada De Pollo</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$12 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/papaPreparada.jpg" alt="PAPA PREPARADA" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Papa Preparada</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$15 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/tostadaPierna.jpeg" alt="TOSTADA PIERNA" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Tostada Pierna</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$15 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm rounded">
+          <img src="imagenes/comida/empanadasPicadillo.jpg" alt="EMPANADA PICADILLO" class="card-img-top rounded-top" style="height: 9rem; object-fit: cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title fw-bold mb-1">Empanada Picadillo</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$12 MXN</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- SNACKS -->
+
+<div id="snacks" class="categoria-menu d-none">
+  <div class="mb-4">
+    <h3 class="h4 text-dark mb-4">Snacks</h3>
+    <div class="row g-3">
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/torta.jpg" class="card-img-top" alt="TORTAS DE PIERNA" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Tortas De Pierna</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$35 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/hamburguesaDoble.jpg" class="card-img-top" alt="HAMBURGUESA DOBLE CARNE" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Hamburguesa Doble Carne</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$50 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/alitas.jpeg" class="card-img-top" alt="ALITAS" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Alitas</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$85 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/hotdog.jpg" class="card-img-top" alt="HOTDOG" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Hotdog</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$25 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/hamburguesa.jpg" class="card-img-top" alt="HAMBURGUESA SENCILLA" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Hamburguesa Sencilla</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$35 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/nuggets.jpg" class="card-img-top" alt="NUGUETTS" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Nuggets</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$35 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/platanos.jpg" class="card-img-top" alt="PLATANO" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Platano</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$35 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/hamburguesaPapas.jpg" class="card-img-top" alt="HAMBURGUESA COMBO PAPAS" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Hamburguesa Combo Papas</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$50 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/hamburguesa-hawaiana.jpg" class="card-img-top" alt="HAMBURGUESA HAWAINA" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Hamburguesa Hawaina</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$45 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/waffle.jpg" class="card-img-top" alt="WAFLE" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Waffle</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$35 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/papasFrancesa.jpg" class="card-img-top" alt="PAPAS A LA FRANCESA" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Papas A La Francesa</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$35 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/hotdogEspecial.jpg" class="card-img-top" alt="HOTDOG ESPECIAL" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Hotdog Especial</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$35 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/hotdogHawai.jpg" class="card-img-top" alt="HOTDOG HAWAIANO" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Hotdog Hawaiano</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$35 MXN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card h-100 shadow-sm hover-shadow">
+          <img src="imagenes/snacks/Torta-de-milanesa.jpg" class="card-img-top" alt="TORTAS DE MILANESA" style="height:144px; object-fit:cover;">
+          <div class="card-body p-3">
+            <h5 class="card-title mb-1">Tortas De Milanesa</h5>
+            <p class="card-text text-muted small mb-1">Producto casero.</p>
+            <span class="fw-bold text-danger">$35 MXN</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- BEBIDAS -->
+<div id="bebidas" class="categoria-menu d-none">
+  <h3 class="h4 text-dark mb-4">Bebidas</h3>
+  <div class="row g-3">
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/topoChico.jpg" alt="Tehuacan Topo Chico" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Tehuacan Topo Chico</h5>
+          <p class="card-text text-muted small mb-1">Bebida refrescante.</p>
+          <span class="fw-bold text-danger">$35 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/jarraJamaica.jpg" alt="Agua Jamaica 1Lt" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Agua Jamaica 1Lt</h5>
+          <p class="card-text text-muted small mb-1">Bebida refrescante.</p>
+          <span class="fw-bold text-danger">$40 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/chelada.jpg" alt="Chelada" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Chelada</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$45 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/pascual.jpg" alt="Refresco Pascual" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Refresco Pascual</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$25 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/coca.jpg" alt="Coca-Cola" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Coca-Cola</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$30 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/modeloEspecial.jpeg" alt="Modelo Especial" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Modelo Especial</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$35 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/corona-cero.png" alt="Cerveza Cero" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Cerveza Cero</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$28 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/agua.jpg" alt="Vaso Agua" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Vaso Agua</h5>
+          <p class="card-text text-muted small mb-1">Bebida refrescante.</p>
+          <span class="fw-bold text-danger">$25 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/preparadodeMichelada.jpg" alt="Preparado Michelada" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Preparado Michelada</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$25 MXN</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/mexicola.jpg" alt="Mexicola" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Mexicola</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$25 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/topochico-600-ml.jpeg" alt="Tehuacan Chico" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Tehuacan Chico</h5>
+          <p class="card-text text-muted small mb-1">Bebida refrescante.</p>
+          <span class="fw-bold text-danger">$20 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/modeloNegra.jpg" alt="Negra Modelo" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Negra Modelo</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$35 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/limonada.jpg" alt="Limonada Natural" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Limonada Natural</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$40 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/aguaMega.png" alt="Tarro Mega Agua" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Tarro Mega Agua</h5>
+          <p class="card-text text-muted small mb-1">Bebida refrescante.</p>
+          <span class="fw-bold text-danger">$40 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/cafeNegro.JPG" alt="Cafe" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Cafe</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$12 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/jarraAgua.jpg" alt="Jarra Agua" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Jarra Agua</h5>
+          <p class="card-text text-muted small mb-1">Bebida refrescante.</p>
+          <span class="fw-bold text-danger">$60 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/limonada-mineral.jpeg" alt="Limonada Mineral" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Limonada Mineral</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$45 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/maistra.jpg" alt="Maistra" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Maistra</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$20 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/boing.jpeg" alt="Boing" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Boing</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$30 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/escarchadoLimon.jpg" alt="Escarchado Limon Y Sal" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Escarchado Limon Y Sal</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$20 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/michelada.jpg" alt="Michelada" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Michelada</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$60 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/corona.jpg" alt="Corona" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Corona</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$28 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/agua500ml.jpeg" alt="Agua 500Ml" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Agua 500Ml</h5>
+          <p class="card-text text-muted small mb-1">Bebida refrescante.</p>
+          <span class="fw-bold text-danger">$20 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/agua1LT.jpg" alt="Agua 1 Lt" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Agua 1 Lt</h5>
+          <p class="card-text text-muted small mb-1">Bebida refrescante.</p>
+          <span class="fw-bold text-danger">$30 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/VasoTorito.jpeg" alt="Torito" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Torito</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$45 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/michelob.jpg" alt="Michelob Ultra" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Michelob Ultra</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$30 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/victoria.jpg" alt="Victoria" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Victoria</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$30 MXN</span>
+        </div>
+      </div>
+    </div>
+  
+  
+    
+     <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/botellaTorito.jpg" alt="Victoria" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Botella de Torito</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$80 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+     <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/cafe.jpg" alt="Victoria" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Cafe con leche</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$15 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+     <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/babyMango.jpg" alt="Victoria" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Baby Mango</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$60 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+     <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/pacifico.jpg" alt="Victoria" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Pacifico</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$30 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+     <div class="col-6 col-sm-4 col-md-3">
+      <div class="card h-100 shadow-sm hover-shadow">
+        <img src="imagenes/bebidas/micheladaMega.jpg" alt="Victoria" class="card-img-top" style="height:144px; object-fit:cover;">
+        <div class="card-body p-3">
+          <h5 class="card-title mb-1">Michelada Mega</h5>
+          <p class="card-text text-muted small mb-1">Disfrútala bien fría.</p>
+          <span class="fw-bold text-danger">$80 MXN</span>
+        </div>
+      </div>
+    </div>
+    
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Ubicación -->
+<section id="ubicacion" class="bg-light py-5 px-3">
+  <div class="container text-center">
+    <h2 class="h3 fw-bold mb-3">¿Dónde estamos?</h2>
+    <p class="mb-4">Córdoba, Camino al Barreal, Colonia Santa Teresita.</p>
+    <iframe
+      class="w-100 rounded shadow"
+      style="height: 16rem;"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386031.69946699677!2d-97.18565772902782!3d18.887294157599076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c4e5a15ce0f593%3A0xcede69cbdde70176!2sLos%20Dos%20Carnales%22!5e0!3m2!1ses!2smx!4v1752885449718!5m2!1ses!2smx"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="py-5 px-3">
+  <div class="container text-center">
+    <h2 class="h3 fw-bold mb-3">Contáctanos</h2>
+
+    <p class="mb-2 fs-5 text-secondary d-flex justify-content-center align-items-center gap-2 mx-auto" style="max-width: 300px;">
+      <svg class="bi bi-telephone-fill" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2 3a1 1 0 0 1 1-1h1.17a1 1 0 0 1 .97.757l.518 2.07a1 1 0 0 1-.217.948L4.21 7.1a11.287 11.287 0 0 0 4.623 4.623l1.323-1.32a1 1 0 0 1 .949-.217l2.07.518a1 1 0 0 1 .757.97V13a1 1 0 0 1-1 1h-1C4.686 14 2 11.314 2 8V3z"/>
+      </svg>
+      2711240301
+    </p>
+
+    <p class="mb-4 fs-5 text-secondary d-flex justify-content-center align-items-center gap-2 mx-auto" style="max-width: 360px;">
+      <svg class="bi bi-envelope-fill" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555z"/>
+        <path d="M0 4.697v7.104l5.803-3.553L0 4.697z"/>
+        <path d="M6.761 8.83 0 12.801V13a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-.199l-6.761-3.971L8 9.586l-1.239-.756z"/>
+      </svg>
+      losdoscarnaless2@gmail.com
+    </p>
+
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="https://wa.me/5212711240301" target="_blank" class="btn btn-success d-flex align-items-center gap-2 px-4 py-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+          <path d="M16 8a8 8 0 1 0-14.71 5.713L0 16l2.286-1.29A8 8 0 0 0 16 8zM6.002 12c-.27 0-.533-.038-.77-.11a.657.657 0 0 1-.438-.438c-.072-.237-.11-.5-.11-.77 0-.318.12-.625.342-.85a2.063 2.063 0 0 1 2.096-.503.657.657 0 0 1 .275.104c.19.134.276.408.155.63-.166.304-.26.66-.26 1.03 0 .267.05.523.138.75a.652.652 0 0 1-.633.892z"/>
+        </svg>
+        WhatsApp
+      </a>
+      <a href="https://www.facebook.com/los.dos.carnales.516146?locale=es_LA" target="_blank" class="btn btn-primary d-flex align-items-center gap-2 px-4 py-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M8.9 14v-4.08h1.61l.24-1.88H8.9V7.46c0-.54.15-.9.91-.9h.97V5.03c-.17 0-.66-.07-1.26-.07-1.24 0-2.1.75-2.1 2.13v1.19H6V12h2.9z"/>
+        </svg>
+        Facebook
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-secondary py-3 text-center">
+  &copy; 2025 Los Dos Carnales. Todos los derechos reservados.
+</footer>
+
+<script>
+  function mostrarCategoria(categoria) {
+    document.querySelectorAll('.categoria-menu').forEach(div => {
+      div.classList.add('d-none');
+    });
+    document.getElementById(categoria).classList.remove('d-none');
+  }
+</script>
+
+</body>
